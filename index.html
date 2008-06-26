@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MultipleSelect - demo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+<link rel="stylesheet" href="multiple_select.css" type="text/css" media="screen"/>
+
+<link rel="stylesheet" type="text/css" href="codehighlight.css"></link>
+
+<script type="text/javascript" src="mootools.v1.11.js"></script>
+<script type="text/javascript" src="multiple_select.js"></script>
+<script type="text/javascript" src="clean_tumblr_pre.js"></script>
+
+</head>
+<body>
+<div id="container">
+<h1>Multiple Select Widget with Mootools</h1>
+<h2>Example:</h2>
+<select name="countries" class="multiple_select" multiple="multiple">
+    <option value="1">Austria</option>
+    <option value="2">Czech</option>
+    <option value="3">France</option>
+    <option value="4">Germany</option>
+    <option value="7">Italy</option>
+    <option value="5">Spain</option>
+    <option value="6">Switzerland</option>
+</select>
+
+</div>
+<script type="text/javascript">
+window.addEvent('domready', function() {
+	$$('.multiple_select').each(function(el){
+		new MultipleSelect(el);
+	});
+	$$('.multiple_select_extended').each(function(el){
+		new MultipleSelectExtended(el, {
+		   elementIsValid: function(val, txt) {
+            if (txt.toLowerCase().contains('a'))
+               return true;
+            else return false;
+		   }
+		});
+	});
+});
+</script>
+</body>
+</html>

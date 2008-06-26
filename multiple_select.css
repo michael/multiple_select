@@ -1,0 +1,19 @@
+body {background-color: #161618; font-family: "Lucida Grande", Tahoma; margin: 0; padding: 0 12px; font-size: 12px; color: #ccc;}
+
+#container {margin: 20px 0 40px 40px; width:750px;}
+
+.leftcol	{padding: 0; width:300px; float: left;}
+.rightcol	{padding: 0; width:350px; margin:0 0 0 400px;}
+
+a {color: #ccc; font-size: 12px;}
+a:hover {color: #444;}
+
+h1 {font-size: 24px; margin: 28px 0 15px 0; color: #ccc;}
+h2 {font-size: 15px; margin: 28px 0 15px 0; color: #ccc;}
+
+/* multiple_select */
+.multiple_select {border:0; background-color:#161618; color: #fff; width: 300px; height: 200px;}
+ul.multiple_select_list {background-color: #161618; margin: 0; padding: 0; overflow: auto; list-style: none; border: 0; z-index: 500;}
+ul.multiple_select_list li {background: url('./images/unchecked.png') left no-repeat; color: #999; padding: 0 0 0 50px; border-bottom: 1px solid #1B1B1D; line-height: 25px; height: 25px; cursor: pointer; font-weight: normal; font-size: 12px;}
+ul.multiple_select_list li.choice_selected {background: url('./images/checked.png') left no-repeat; background-color: #121214; color: #fff;}
+ul.multiple_select_list li.choice_hover {color: #444;}
