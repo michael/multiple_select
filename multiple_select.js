@@ -62,7 +62,7 @@ var MultipleSelect = new Class({
 
 	build: function(el) {
 		for(i = 0; i < el.length; i++) {
-			var el2 = new Element('li', {'id': el.name+'_'+i}).setHTML(el.options[i].text);
+			var el2 = new Element('li', {'id': el.name+'_'+i}).set('html',el.options[i].text);
       if (this.oldSelect.options[i].selected)
       	el2.addClass('choice_selected');		  
 			this.addChoiceEvents(el2);
